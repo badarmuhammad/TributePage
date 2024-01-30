@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-color: #F5F7F8;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.card {
+	padding: 25px;
+	border: 0.5px solid #fff;
+	border-radius: 3px;
+	box-shadow: 1px 1px 10px 3px #d7ecdb;
+	transition: 0.5s;
+	background-color: #FFF;
+	position: relative;
+	font-size: 1.3em;
+}
+
+.card:hover {
+	box-shadow: 1px 1px 45px 10px #ddcbb3;
+}
+
+.card p {
+	margin: 0;
+}
+
+.hero .tagline {
+	position: absolute;
+	bottom: 5px;
+	right: 25px;
+	padding: 10px;
+	font-size: 3em;
+	color: #fff;
+	font-family: "Quicksand";
+}
+
+.quote {
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.quote blockquote {
+	font-size: 1.3em;
+	border: none;
+	margin: 0;
+	position: relative;
+}
+
+.quote::before {
+	content: "\275D";
+	font-size: 10em;
+	display: inline-block;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	opacity: 0.1;
+}
+
+.timeline {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.timeline:before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 100%;
+	background: #ffffff;
+	border-radius: 5px;
+	position: absolute;
+	left: 20%;
+}
+
+.timeline .tmln-item {
+	margin-bottom: 30px;
+	margin-left: 10px;
+	position: relative;
+}
+
+.timeline .tmln-item:last-child {
+	margin-bottom: 0;
+}
+
+.timeline-title {
+	position: relative;
+	margin-right: 23px;
+	/* padding-right: 20px; */
+}
+
+.timeline-title p {
+	font-weight: 600;
+	position: absolute;
+	top: 24px;
+	left: 40px;
+}
+
+.timeline .card:before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 10px solid #efc068;
+	border-radius: 100%;
+	position: absolute;
+	left: -8%;
+	box-shadow: 2px 2px 8px 0px #555;
+}
+
+.footer p {
+	font-weight: 300;
+	position: relative;
+}
+
+.heartbeat {
+	color: #e8700d;
+	animation: heartbeat 3s infinite;
+}
+
+@media (max-width: 1279px) {
+	.timeline .card:before {
+		left: -8.5%;
+	}
+}
+
+@media (max-width: 1023px) {
+	.timeline-title {
+		position: absolute;
+		width: 150px;
+		z-index: 1;
+		top: -55px;
+		left: 20px;
+	}
+
+	.timeline::before {
+		left: 0;
+	}
+
+	.timeline .card::before {
+		left: -12.5%;
+	}
+
+	.wish {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 991px) {
+	.timeline-title {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.timeline-title p {
+		position: relative;
+		top: 0;
+		left: 20px;
+		font-size: 1.2em;
+	}
+
+	.timeline::before {
+		left: -5%;
+	}
+
+	.timeline .card::before {
+		left: -6%;
+	}
+}
+
+@media (min-width: 768px) {
+  .hero {
+	background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgb(40, 24, 0)), url("https://www.dicoding.com/blog/wp-content/uploads/2020/06/Internship-Robby-Patung-Al-Khawarizm.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  	background-size: cover;
+  	height: 100vh;
+	position: relative;
+	padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .hero {
+       background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgb(40, 24, 0)), url("https://www.dicoding.com/blog/wp-content/uploads/2020/06/Internship-Robby-Patung-Al-Khawarizm.jpg");
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+  }
+  
+  .hero .tagline {
+    right: 15px;
+  }
+  
+	.wish {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 639px) {
+
+	.tagline p {
+		font-size: 0.4em;
+	}
+
+	.quote blockquote {
+		font-size: 1em;
+	}
+
+	.statement p {
+	font-size: 1.5em;
+	}
+
+	.timeline .card::before {
+		left: -7.5%;
+	}
+
+	.wish {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 479px) {
+	.tagline h1 {
+		font-size: 0.8em;
+	}
+
+	.tagline p {
+		font-size: 0.3em;
+	}
+}
